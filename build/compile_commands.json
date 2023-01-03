@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/qishy/GitHub/MPRPC/build/example/callee",
+  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/provider.dir/userservice.cc.o -c /home/qishy/GitHub/MPRPC/example/callee/userservice.cc",
+  "file": "/home/qishy/GitHub/MPRPC/example/callee/userservice.cc"
+},
+{
+  "directory": "/home/qishy/GitHub/MPRPC/build/example/callee",
+  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/qishy/GitHub/MPRPC/example/user.pb.cc",
+  "file": "/home/qishy/GitHub/MPRPC/example/user.pb.cc"
+}
+]
