@@ -14,6 +14,7 @@ public:
     {
         std::cout << "doing local service: Login" << std::endl;
         std::cout << "name: " << name << "pwd: " << pwd << std::endl;
+        return true;
     }
 
     /**
@@ -51,7 +52,7 @@ public:
 
 int main(int argc, char **argv)
 {
-    // 调用框架的初始化操作
+    // 调用框架的初始化操作 provider -i config.conf
     MprpcApplication::Init(argc, argv);
 
     // 将UserService对象发布到rpc节点上

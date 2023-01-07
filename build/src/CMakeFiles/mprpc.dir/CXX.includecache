@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/include/mprpcapplication.h
+mprpcconfig.h
+../src/include/mprpcconfig.h
+
+../src/include/mprpcconfig.h
+unordered_map
+-
+string
+-
+
+../src/include/rpcprovider.h
+google/protobuf/service.h
+../src/include/google/protobuf/service.h
+memory
+-
+muduo/net/TcpServer.h
+-
+muduo/net/EventLoop.h
+-
+muduo/net/InetAddress.h
+-
+muduo/net/TcpConnection.h
+-
+
+/home/qishy/GitHub/MPRPC/src/rpcprovider.cc
+rpcprovider.h
+/home/qishy/GitHub/MPRPC/src/rpcprovider.h
+string
+-
+mprpcapplication.h
+/home/qishy/GitHub/MPRPC/src/mprpcapplication.h
+iostream
+-
+

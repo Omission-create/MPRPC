@@ -1,5 +1,20 @@
 [
 {
+  "directory": "/home/qishy/GitHub/MPRPC/build/src",
+  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/mprpc.dir/mprpcapplication.cc.o -c /home/qishy/GitHub/MPRPC/src/mprpcapplication.cc",
+  "file": "/home/qishy/GitHub/MPRPC/src/mprpcapplication.cc"
+},
+{
+  "directory": "/home/qishy/GitHub/MPRPC/build/src",
+  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/mprpc.dir/mprpcconfig.cc.o -c /home/qishy/GitHub/MPRPC/src/mprpcconfig.cc",
+  "file": "/home/qishy/GitHub/MPRPC/src/mprpcconfig.cc"
+},
+{
+  "directory": "/home/qishy/GitHub/MPRPC/build/src",
+  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/mprpc.dir/rpcprovider.cc.o -c /home/qishy/GitHub/MPRPC/src/rpcprovider.cc",
+  "file": "/home/qishy/GitHub/MPRPC/src/rpcprovider.cc"
+},
+{
   "directory": "/home/qishy/GitHub/MPRPC/build/example/callee",
   "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/provider.dir/userservice.cc.o -c /home/qishy/GitHub/MPRPC/example/callee/userservice.cc",
   "file": "/home/qishy/GitHub/MPRPC/example/callee/userservice.cc"

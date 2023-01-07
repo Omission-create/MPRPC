@@ -26,7 +26,11 @@
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
-					"source" : "src"
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0
+					]
 				},
 				{
 					"build" : "example",
@@ -53,7 +57,7 @@
 					"source" : "example/callee",
 					"targetIndexes" : 
 					[
-						0
+						1
 					]
 				}
 			],
@@ -71,16 +75,24 @@
 					"name" : "mprpc",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
 			"targets" : 
 			[
 				{
+					"directoryIndex" : 1,
+					"id" : "mprpc::@145eef247bfb46b6828c",
+					"jsonFile" : "target-mprpc-Debug-acc11dc8a52a224c44d3.json",
+					"name" : "mprpc",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 3,
 					"id" : "provider::@493cd8b262c97a98b12b",
-					"jsonFile" : "target-provider-Debug-1c859f2dc9fd99421cd2.json",
+					"jsonFile" : "target-provider-Debug-38bac2da751b01bd371f.json",
 					"name" : "provider",
 					"projectIndex" : 0
 				}

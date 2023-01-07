@@ -1,5 +1,6 @@
 #pragma once
 
+#include "mprpcconfig.h"
 /**
  * @brief mprpc框架基础类，初始化
  *
@@ -11,8 +12,12 @@ public:
 
     static MprpcApplication &GetInstance();
 
+    static MprpcConfig &GetConfig();
+
 private:
-    MprpcApplication();
+    static MprpcConfig m_config;
+
+    MprpcApplication() {}
     MprpcApplication(const MprpcApplication &) = delete;
     MprpcApplication(MprpcApplication &&) = delete; // 删除拷贝
 };

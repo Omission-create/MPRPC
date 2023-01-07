@@ -1098,6 +1098,18 @@
 			"value" : "/home/qishy/GitHub/MPRPC/build"
 		},
 		{
+			"name" : "mprpc_LIB_DEPENDS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Dependencies for the target"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "general;muduo_net;general;muduo_base;general;pthread;"
+		},
+		{
 			"name" : "mprpc_SOURCE_DIR",
 			"properties" : 
 			[

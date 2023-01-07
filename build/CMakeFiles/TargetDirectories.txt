@@ -2,6 +2,7 @@
 /home/qishy/GitHub/MPRPC/build/CMakeFiles/edit_cache.dir
 /home/qishy/GitHub/MPRPC/build/src/CMakeFiles/rebuild_cache.dir
 /home/qishy/GitHub/MPRPC/build/src/CMakeFiles/edit_cache.dir
+/home/qishy/GitHub/MPRPC/build/src/CMakeFiles/mprpc.dir
 /home/qishy/GitHub/MPRPC/build/example/CMakeFiles/rebuild_cache.dir
 /home/qishy/GitHub/MPRPC/build/example/CMakeFiles/edit_cache.dir
 /home/qishy/GitHub/MPRPC/build/example/callee/CMakeFiles/rebuild_cache.dir
