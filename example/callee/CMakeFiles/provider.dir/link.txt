@@ -1,0 +1,1 @@
+/usr/local/bin/c++    -rdynamic CMakeFiles/provider.dir/userservice.cc.o CMakeFiles/provider.dir/__/user.pb.cc.o  -o ../../bin/provider  -L/home/qishy/GitHub/MPRPC/lib -Wl,-rpath,/home/qishy/GitHub/MPRPC/lib ../../lib/libmprpc.a -lprotobuf -lmuduo_net -lmuduo_base -lpthread 

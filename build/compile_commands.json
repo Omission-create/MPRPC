@@ -6,8 +6,18 @@
 },
 {
   "directory": "/home/qishy/GitHub/MPRPC/build/src",
+  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/mprpc.dir/mprpcchannel.cc.o -c /home/qishy/GitHub/MPRPC/src/mprpcchannel.cc",
+  "file": "/home/qishy/GitHub/MPRPC/src/mprpcchannel.cc"
+},
+{
+  "directory": "/home/qishy/GitHub/MPRPC/build/src",
   "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/mprpc.dir/mprpcconfig.cc.o -c /home/qishy/GitHub/MPRPC/src/mprpcconfig.cc",
   "file": "/home/qishy/GitHub/MPRPC/src/mprpcconfig.cc"
+},
+{
+  "directory": "/home/qishy/GitHub/MPRPC/build/src",
+  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/mprpc.dir/rpcheader.pb.cc.o -c /home/qishy/GitHub/MPRPC/src/rpcheader.pb.cc",
+  "file": "/home/qishy/GitHub/MPRPC/src/rpcheader.pb.cc"
 },
 {
   "directory": "/home/qishy/GitHub/MPRPC/build/src",
@@ -22,6 +32,16 @@
 {
   "directory": "/home/qishy/GitHub/MPRPC/build/example/callee",
   "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/qishy/GitHub/MPRPC/example/user.pb.cc",
+  "file": "/home/qishy/GitHub/MPRPC/example/user.pb.cc"
+},
+{
+  "directory": "/home/qishy/GitHub/MPRPC/build/example/caller",
+  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/consumer.dir/calluserservice.cc.o -c /home/qishy/GitHub/MPRPC/example/caller/calluserservice.cc",
+  "file": "/home/qishy/GitHub/MPRPC/example/caller/calluserservice.cc"
+},
+{
+  "directory": "/home/qishy/GitHub/MPRPC/build/example/caller",
+  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/consumer.dir/__/user.pb.cc.o -c /home/qishy/GitHub/MPRPC/example/user.pb.cc",
   "file": "/home/qishy/GitHub/MPRPC/example/user.pb.cc"
 }
 ]
