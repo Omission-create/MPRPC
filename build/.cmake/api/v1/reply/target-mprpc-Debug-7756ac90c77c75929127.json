@@ -74,7 +74,9 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5,
+				6
 			]
 		}
 	],
@@ -96,12 +98,20 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5,
+				6
 			]
 		}
 	],
 	"sources" : 
 	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/logger.cc",
+			"sourceGroupIndex" : 0
+		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
@@ -118,6 +128,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/mprpcconfig.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/mprpccontroller.cc",
 			"sourceGroupIndex" : 0
 		},
 		{

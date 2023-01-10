@@ -1,9 +1,14 @@
 #include "mprpcchannel.h"
 #include "rpcheader.pb.h"
+#include "mprpcapplication.h"
+#include "mprpccontroller.h"
 #include <iostream>
 #include <string>
 #include <sys/types.h>
 #include <sys/socket.h>
+#include <arpa/inet.h>
+#include <netinet/in.h>
+#include <unistd.h>
 #include <errno.h>
 using namespace mprpc;
 using namespace std;
@@ -25,7 +30,8 @@ void MprpcChannel::CallMethod(const MethodDescriptor *method,
     }
     else
     {
-        std::cout << "request->SerializeToString failed!" << endl;
+        // std::cout << "request->SerializeToString failed!" << endl;
+        controller->SetFailed("request->SerializeToString failed!");
         return;
     }
 
@@ -43,7 +49,8 @@ void MprpcChannel::CallMethod(const MethodDescriptor *method,
     }
     else
     {
-        std::cout << "rpcHeader.SerializeToString failed!" << endl;
+        // std::cout << "rpcHeader.SerializeToString failed!" << endl;
+        controller->SetFailed("rpcHeader.SerializeToString failed!");
         return;
     }
 
@@ -59,10 +66,65 @@ void MprpcChannel::CallMethod(const MethodDescriptor *method,
     cout << "args_str: " << args_str << endl;
 
     // 使用tcp,完成调用
-    int clientfd = socket(AF_INET, SOCK_STREAM, 0);
+    // 使用muduo库对socket的封装
+    int clientfd = socket(AF_INET, SOCK_STREAM, 0); // 可以定义一个智能指针自动删除
     if (-1 == clientfd)
     {
-        std::cout << "create socket failed!" << endl;
-        ecit(EXIT_FAILURE);
+        // std::cout << "create socket failed!" << endl;
+        char errtxt[512] = {0};
+        sprintf(errtxt, "create socket errno: %d", errno);
+        controller->SetFailed(errtxt);
+        exit(EXIT_FAILURE);
     }
+    // 读取配置文件rpcserver信息(可以存下来)
+    string ip = MprpcApplication::GetInstance().GetConfig().Load("rpcserverip");
+    uint16_t port = atoi(MprpcApplication::GetInstance().GetConfig().Load("rpcserverport").c_str());
+
+    struct sockaddr_in server_addr;
+    server_addr.sin_family = AF_INET;
+    server_addr.sin_port = htons(port);
+    server_addr.sin_addr.s_addr = inet_addr(ip.c_str());
+
+    if (-1 == connect(clientfd, (struct sockaddr *)&server_addr, sizeof(server_addr)))
+    {
+        // cout << "connect errno : " << errno << endl;
+        char errtxt[512] = {0};
+        sprintf(errtxt, "connect errno: %d", errno);
+        controller->SetFailed(errtxt);
+        close(clientfd);
+        return;
+    }
+
+    if (-1 == send(clientfd, send_rpc_str.c_str(), send_rpc_str.size(), 0))
+    {
+        // cout << "send errno : " << errno << endl;
+        char errtxt[512] = {0};
+        sprintf(errtxt, "send errno: %d", errno);
+        controller->SetFailed(errtxt);
+        close(clientfd);
+        return;
+    }
+
+    // 接收rpc请求的响应值
+    char recv_buf[1024] = {0};
+    int recv_size = 0;
+    if (-1 == (recv_size = recv(clientfd, recv_buf, 1024, 0)))
+    {
+        // cout << "recv errno : " << errno << endl;
+        char errtxt[512] = {0};
+        sprintf(errtxt, "recv errno: %d", errno);
+        controller->SetFailed(errtxt);
+        close(clientfd);
+        return;
+    }
+
+    // string response_str(recv_buf, 0, recv_size);//string构造函数遇到\0结束
+    if (!response->ParseFromArray(recv_buf, recv_size))
+    {
+        // cout << "response->ParseFromString failed!" << endl;
+        controller->SetFailed("response->ParseFromString failed!");
+        close(clientfd);
+        return;
+    }
+    close(clientfd);
 }

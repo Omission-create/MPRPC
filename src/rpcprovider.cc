@@ -3,6 +3,8 @@
 #include "mprpcapplication.h"
 #include <iostream>
 #include "rpcheader.pb.h"
+#include "logger.h"
+
 
 /**
  * @brief 这里是框架提供给外部使用的，可以发布rpc方法的函数接口
@@ -18,6 +20,8 @@ void RpcProvider::NotifyService(::Service *service)
     const ServiceDescriptor *pserviceDesc = service->GetDescriptor();
     string service_name = pserviceDesc->name();
     int methodCnt = pserviceDesc->method_count();
+
+    LOG_INFO("service_name:%s", service_name);
 
     for (int i = 0; i < methodCnt; ++i)
     {
@@ -148,15 +152,14 @@ void RpcProvider::SendRpcResponse(const TcpConnectionPtr &conn, Message *respons
 {
     // 序列化
     string response_str;
-    if (!response->SerializeToString(&response_str))
+    if (response->SerializeToString(&response_str))
     {
         // 序列化成功，通过网络把rpc方法执行结果返回rpc调用方
         conn->send(response_str);
-        conn->shutdown(); // 模拟http的短链接服务，有rpcprovider主动断开连接
     }
     else
     {
         cout << "response->SerializeToString failed!" << endl;
     }
-    conn->shutdown();
+    conn->shutdown();// 模拟http的短链接服务，有rpcprovider主动断开连接
 }

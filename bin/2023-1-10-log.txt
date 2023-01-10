@@ -1,0 +1,2 @@
+22:20:28 => [info]first log message!
+22:20:28 => [info]/home/qishy/GitHub/MPRPC/example/callee/friendservice.cc:main:51

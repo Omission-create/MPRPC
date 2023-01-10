@@ -69,6 +69,6 @@ void MprpcConfig::Trim(std::string &read_buf)
     if (idx != -1)
     {
         // 说明字符串后面有空格
-        read_buf = read_buf.substr(idx, idx + 1);
+        read_buf = read_buf.substr(0, idx + 1);
     }
 }

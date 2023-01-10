@@ -1,6 +1,11 @@
 [
 {
   "directory": "/home/qishy/GitHub/MPRPC/build/src",
+  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/mprpc.dir/logger.cc.o -c /home/qishy/GitHub/MPRPC/src/logger.cc",
+  "file": "/home/qishy/GitHub/MPRPC/src/logger.cc"
+},
+{
+  "directory": "/home/qishy/GitHub/MPRPC/build/src",
   "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/mprpc.dir/mprpcapplication.cc.o -c /home/qishy/GitHub/MPRPC/src/mprpcapplication.cc",
   "file": "/home/qishy/GitHub/MPRPC/src/mprpcapplication.cc"
 },
@@ -16,6 +21,11 @@
 },
 {
   "directory": "/home/qishy/GitHub/MPRPC/build/src",
+  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/mprpc.dir/mprpccontroller.cc.o -c /home/qishy/GitHub/MPRPC/src/mprpccontroller.cc",
+  "file": "/home/qishy/GitHub/MPRPC/src/mprpccontroller.cc"
+},
+{
+  "directory": "/home/qishy/GitHub/MPRPC/build/src",
   "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/mprpc.dir/rpcheader.pb.cc.o -c /home/qishy/GitHub/MPRPC/src/rpcheader.pb.cc",
   "file": "/home/qishy/GitHub/MPRPC/src/rpcheader.pb.cc"
 },
@@ -26,22 +36,22 @@
 },
 {
   "directory": "/home/qishy/GitHub/MPRPC/build/example/callee",
-  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/provider.dir/userservice.cc.o -c /home/qishy/GitHub/MPRPC/example/callee/userservice.cc",
-  "file": "/home/qishy/GitHub/MPRPC/example/callee/userservice.cc"
+  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/provider.dir/friendservice.cc.o -c /home/qishy/GitHub/MPRPC/example/callee/friendservice.cc",
+  "file": "/home/qishy/GitHub/MPRPC/example/callee/friendservice.cc"
 },
 {
   "directory": "/home/qishy/GitHub/MPRPC/build/example/callee",
-  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/qishy/GitHub/MPRPC/example/user.pb.cc",
-  "file": "/home/qishy/GitHub/MPRPC/example/user.pb.cc"
+  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/provider.dir/__/friend.pb.cc.o -c /home/qishy/GitHub/MPRPC/example/friend.pb.cc",
+  "file": "/home/qishy/GitHub/MPRPC/example/friend.pb.cc"
 },
 {
   "directory": "/home/qishy/GitHub/MPRPC/build/example/caller",
-  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/consumer.dir/calluserservice.cc.o -c /home/qishy/GitHub/MPRPC/example/caller/calluserservice.cc",
-  "file": "/home/qishy/GitHub/MPRPC/example/caller/calluserservice.cc"
+  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/consumer.dir/callfriendservice.cc.o -c /home/qishy/GitHub/MPRPC/example/caller/callfriendservice.cc",
+  "file": "/home/qishy/GitHub/MPRPC/example/caller/callfriendservice.cc"
 },
 {
   "directory": "/home/qishy/GitHub/MPRPC/build/example/caller",
-  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/consumer.dir/__/user.pb.cc.o -c /home/qishy/GitHub/MPRPC/example/user.pb.cc",
-  "file": "/home/qishy/GitHub/MPRPC/example/user.pb.cc"
+  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/consumer.dir/__/friend.pb.cc.o -c /home/qishy/GitHub/MPRPC/example/friend.pb.cc",
+  "file": "/home/qishy/GitHub/MPRPC/example/friend.pb.cc"
 }
 ]

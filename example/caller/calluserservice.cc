@@ -30,5 +30,25 @@ int main(int argc, char **argv)
         std::cout << "rpc login response failed : " << response.result().errmsg() << std::endl;
     }
 
+    // 演示调用远程发布的rpc方法Register
+    // rpc请求参数
+    RegisterRequest request2;
+    request2.set_id(2000);
+    request2.set_name("qishy");
+    request2.set_pwd("qishy");
+    RegisterResponse response2;
+
+    // 以同步的方式发起rpc请求
+    stub.Register(nullptr, &request2, &response2, nullptr);
+    // 调用结果
+    if (0 == response.result().errcode())
+    {
+        std::cout << "rpc request response success : " << response.success() << std::endl;
+    }
+    else
+    {
+        std::cout << "rpc request response failed : " << response.result().errmsg() << std::endl;
+    }
+
     return 0;
 }

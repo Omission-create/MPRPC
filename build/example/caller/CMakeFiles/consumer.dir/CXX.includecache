@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../example/user.pb.h
+../example/friend.pb.h
 limits
 -
 string
@@ -64,11 +64,21 @@ unordered_map
 string
 -
 
-/home/qishy/GitHub/MPRPC/example/caller/calluserservice.cc
+../src/include/mprpccontroller.h
+google/protobuf/service.h
+-
+string
+-
+
+/home/qishy/GitHub/MPRPC/example/caller/callfriendservice.cc
 mprpcapplication.h
 /home/qishy/GitHub/MPRPC/example/caller/mprpcapplication.h
 mprpcchannel.h
 /home/qishy/GitHub/MPRPC/example/caller/mprpcchannel.h
-user.pb.h
-/home/qishy/GitHub/MPRPC/example/caller/user.pb.h
+mprpccontroller.h
+/home/qishy/GitHub/MPRPC/example/caller/mprpccontroller.h
+friend.pb.h
+/home/qishy/GitHub/MPRPC/example/caller/friend.pb.h
+iostream
+-
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../example/user.pb.h
+../example/friend.pb.h
 limits
 -
 string
@@ -46,6 +46,20 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
+../src/include/lockqueue.h
+queue
+-
+thread
+-
+condition_variable
+-
+
+../src/include/logger.h
+lockqueue.h
+../src/include/lockqueue.h
+time.h
+-
+
 ../src/include/mprpcapplication.h
 mprpcconfig.h
 ../src/include/mprpcconfig.h
@@ -74,15 +88,19 @@ google/protobuf/descriptor.h
 unordered_map
 -
 
-/home/qishy/GitHub/MPRPC/example/callee/userservice.cc
+/home/qishy/GitHub/MPRPC/example/callee/friendservice.cc
 iostream
 -
 string
 -
-user.pb.h
-/home/qishy/GitHub/MPRPC/example/callee/user.pb.h
 mprpcapplication.h
 /home/qishy/GitHub/MPRPC/example/callee/mprpcapplication.h
 rpcprovider.h
 /home/qishy/GitHub/MPRPC/example/callee/rpcprovider.h
+friend.pb.h
+/home/qishy/GitHub/MPRPC/example/callee/friend.pb.h
+vector
+-
+logger.h
+/home/qishy/GitHub/MPRPC/example/callee/logger.h
 
