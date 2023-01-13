@@ -1,38 +1,43 @@
 [
 {
   "directory": "/home/qishy/GitHub/MPRPC/build/src",
-  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/mprpc.dir/logger.cc.o -c /home/qishy/GitHub/MPRPC/src/logger.cc",
+  "command": "/usr/local/bin/g++  -Dmprpc_EXPORTS -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g -fPIC   -o CMakeFiles/mprpc.dir/logger.cc.o -c /home/qishy/GitHub/MPRPC/src/logger.cc",
   "file": "/home/qishy/GitHub/MPRPC/src/logger.cc"
 },
 {
   "directory": "/home/qishy/GitHub/MPRPC/build/src",
-  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/mprpc.dir/mprpcapplication.cc.o -c /home/qishy/GitHub/MPRPC/src/mprpcapplication.cc",
+  "command": "/usr/local/bin/g++  -Dmprpc_EXPORTS -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g -fPIC   -o CMakeFiles/mprpc.dir/mprpcapplication.cc.o -c /home/qishy/GitHub/MPRPC/src/mprpcapplication.cc",
   "file": "/home/qishy/GitHub/MPRPC/src/mprpcapplication.cc"
 },
 {
   "directory": "/home/qishy/GitHub/MPRPC/build/src",
-  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/mprpc.dir/mprpcchannel.cc.o -c /home/qishy/GitHub/MPRPC/src/mprpcchannel.cc",
+  "command": "/usr/local/bin/g++  -Dmprpc_EXPORTS -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g -fPIC   -o CMakeFiles/mprpc.dir/mprpcchannel.cc.o -c /home/qishy/GitHub/MPRPC/src/mprpcchannel.cc",
   "file": "/home/qishy/GitHub/MPRPC/src/mprpcchannel.cc"
 },
 {
   "directory": "/home/qishy/GitHub/MPRPC/build/src",
-  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/mprpc.dir/mprpcconfig.cc.o -c /home/qishy/GitHub/MPRPC/src/mprpcconfig.cc",
+  "command": "/usr/local/bin/g++  -Dmprpc_EXPORTS -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g -fPIC   -o CMakeFiles/mprpc.dir/mprpcconfig.cc.o -c /home/qishy/GitHub/MPRPC/src/mprpcconfig.cc",
   "file": "/home/qishy/GitHub/MPRPC/src/mprpcconfig.cc"
 },
 {
   "directory": "/home/qishy/GitHub/MPRPC/build/src",
-  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/mprpc.dir/mprpccontroller.cc.o -c /home/qishy/GitHub/MPRPC/src/mprpccontroller.cc",
+  "command": "/usr/local/bin/g++  -Dmprpc_EXPORTS -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g -fPIC   -o CMakeFiles/mprpc.dir/mprpccontroller.cc.o -c /home/qishy/GitHub/MPRPC/src/mprpccontroller.cc",
   "file": "/home/qishy/GitHub/MPRPC/src/mprpccontroller.cc"
 },
 {
   "directory": "/home/qishy/GitHub/MPRPC/build/src",
-  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/mprpc.dir/rpcheader.pb.cc.o -c /home/qishy/GitHub/MPRPC/src/rpcheader.pb.cc",
+  "command": "/usr/local/bin/g++  -Dmprpc_EXPORTS -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g -fPIC   -o CMakeFiles/mprpc.dir/rpcheader.pb.cc.o -c /home/qishy/GitHub/MPRPC/src/rpcheader.pb.cc",
   "file": "/home/qishy/GitHub/MPRPC/src/rpcheader.pb.cc"
 },
 {
   "directory": "/home/qishy/GitHub/MPRPC/build/src",
-  "command": "/usr/local/bin/g++   -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g   -o CMakeFiles/mprpc.dir/rpcprovider.cc.o -c /home/qishy/GitHub/MPRPC/src/rpcprovider.cc",
+  "command": "/usr/local/bin/g++  -Dmprpc_EXPORTS -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g -fPIC   -o CMakeFiles/mprpc.dir/rpcprovider.cc.o -c /home/qishy/GitHub/MPRPC/src/rpcprovider.cc",
   "file": "/home/qishy/GitHub/MPRPC/src/rpcprovider.cc"
+},
+{
+  "directory": "/home/qishy/GitHub/MPRPC/build/src",
+  "command": "/usr/local/bin/g++  -Dmprpc_EXPORTS -I/home/qishy/GitHub/MPRPC/src/include -I/home/qishy/GitHub/MPRPC/example  -g -fPIC   -o CMakeFiles/mprpc.dir/zookeeperutil.cc.o -c /home/qishy/GitHub/MPRPC/src/zookeeperutil.cc",
+  "file": "/home/qishy/GitHub/MPRPC/src/zookeeperutil.cc"
 },
 {
   "directory": "/home/qishy/GitHub/MPRPC/build/example/callee",

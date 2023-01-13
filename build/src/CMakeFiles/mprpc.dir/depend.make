@@ -25,9 +25,18 @@ src/CMakeFiles/mprpc.dir/mprpccontroller.cc.o: ../src/mprpccontroller.cc
 src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o: ../src/include/rpcheader.pb.h
 src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o: ../src/rpcheader.pb.cc
 
+src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: ../src/include/lockqueue.h
+src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: ../src/include/logger.h
 src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: ../src/include/mprpcapplication.h
 src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: ../src/include/mprpcconfig.h
 src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: ../src/include/rpcheader.pb.h
 src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: ../src/include/rpcprovider.h
 src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: ../src/rpcprovider.cc
+
+src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o: ../src/include/lockqueue.h
+src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o: ../src/include/logger.h
+src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o: ../src/include/mprpcapplication.h
+src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o: ../src/include/mprpcconfig.h
+src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o: ../src/include/zookeeperutil.h
+src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o: ../src/zookeeperutil.cc
 

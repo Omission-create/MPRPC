@@ -94,7 +94,7 @@ consumer_EXTERNAL_OBJECTS =
 ../bin/consumer: example/caller/CMakeFiles/consumer.dir/callfriendservice.cc.o
 ../bin/consumer: example/caller/CMakeFiles/consumer.dir/__/friend.pb.cc.o
 ../bin/consumer: example/caller/CMakeFiles/consumer.dir/build.make
-../bin/consumer: ../lib/libmprpc.a
+../bin/consumer: ../lib/libmprpc.so
 ../bin/consumer: example/caller/CMakeFiles/consumer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qishy/GitHub/MPRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../bin/consumer"
 	cd /home/qishy/GitHub/MPRPC/build/example/caller && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/consumer.dir/link.txt --verbose=$(VERBOSE)

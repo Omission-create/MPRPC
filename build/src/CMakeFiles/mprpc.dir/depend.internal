@@ -26,8 +26,17 @@ src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o
  ../src/include/rpcheader.pb.h
  /home/qishy/GitHub/MPRPC/src/rpcheader.pb.cc
 src/CMakeFiles/mprpc.dir/rpcprovider.cc.o
+ ../src/include/lockqueue.h
+ ../src/include/logger.h
  ../src/include/mprpcapplication.h
  ../src/include/mprpcconfig.h
  ../src/include/rpcheader.pb.h
  ../src/include/rpcprovider.h
  /home/qishy/GitHub/MPRPC/src/rpcprovider.cc
+src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o
+ ../src/include/lockqueue.h
+ ../src/include/logger.h
+ ../src/include/mprpcapplication.h
+ ../src/include/mprpcconfig.h
+ ../src/include/zookeeperutil.h
+ /home/qishy/GitHub/MPRPC/src/zookeeperutil.cc

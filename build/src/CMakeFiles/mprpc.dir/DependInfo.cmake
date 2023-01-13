@@ -11,8 +11,14 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/qishy/GitHub/MPRPC/src/mprpccontroller.cc" "/home/qishy/GitHub/MPRPC/build/src/CMakeFiles/mprpc.dir/mprpccontroller.cc.o"
   "/home/qishy/GitHub/MPRPC/src/rpcheader.pb.cc" "/home/qishy/GitHub/MPRPC/build/src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o"
   "/home/qishy/GitHub/MPRPC/src/rpcprovider.cc" "/home/qishy/GitHub/MPRPC/build/src/CMakeFiles/mprpc.dir/rpcprovider.cc.o"
+  "/home/qishy/GitHub/MPRPC/src/zookeeperutil.cc" "/home/qishy/GitHub/MPRPC/build/src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "mprpc_EXPORTS"
+  )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
