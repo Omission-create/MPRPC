@@ -4,7 +4,7 @@
 #include <iostream>
 #include "rpcheader.pb.h"
 #include "logger.h"
-
+#include "zookeeperutil.h"
 
 /**
  * @brief 这里是框架提供给外部使用的，可以发布rpc方法的函数接口
@@ -54,7 +54,30 @@ void RpcProvider::Run()
 
     // 设置muduo库的线程数量
     server.setThreadNum(4);
-    cout << "RpcProvider start service @ip: " << ip << " @port: " << port << endl;
+
+    // 把当前rpc节点上要发布的服务全部注册到zk上面，让rpc client可以从zk上发现服务
+    // session timeout 30s    zkclient 网络IO线程  1/3*timeout时间发送ping消息
+    ZkClient zkCli;
+    zkCli.Start();
+    // service_name为永久性节点 method_name为临时性节点
+    for (auto &sp : m_serviceInfoMap)
+    {
+        // /service_name
+        string service_path = "/" + sp.first;
+        zkCli.Create(service_path.c_str(), nullptr, 0);
+        for (auto &mp : sp.second.m_methodMap)
+        {
+            // /service_name/method_name
+            string method_path = service_path + "/" + mp.first;
+            char method_path_data[128] = {0};
+            sprintf(method_path_data, "%s:%d", ip.c_str(), port);
+            // ZOO_EPHEMERAL表示znode是一个临时性节点
+            zkCli.Create(method_path.c_str(), method_path_data, strlen(method_path_data), ZOO_EPHEMERAL);
+        }
+    }
+
+    cout
+        << "RpcProvider start service @ip: " << ip << " @port: " << port << endl;
 
     // 启动网络服务
     server.start();
@@ -161,5 +184,5 @@ void RpcProvider::SendRpcResponse(const TcpConnectionPtr &conn, Message *respons
     {
         cout << "response->SerializeToString failed!" << endl;
     }
-    conn->shutdown();// 模拟http的短链接服务，有rpcprovider主动断开连接
+    conn->shutdown(); // 模拟http的短链接服务，有rpcprovider主动断开连接
 }
